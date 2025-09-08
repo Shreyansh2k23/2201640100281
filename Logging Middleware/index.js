@@ -3,14 +3,13 @@ import axios from 'axios';
 
 const LOGGING_API_URL = 'http://20.244.56.144/evaluation-service/logs';
 // IMPORTANT: Replace this with the token you received after authentication.
-const AUTH_TOKEN = 'Bearer YOUR_AUTH_TOKEN_HERE'; 
+const AUTH_TOKEN = ''; 
 
 /**
- * Sends a log to the evaluation test server.
- * @param {string} stack - Should be "backend" or "frontend".
- * @param {string} level - "info", "warn", "error", "debug", or "fatal".
- * @param {string} package - The package/module where the log originates (e.g., "db", "controller").
- * @param {string} message - The descriptive log message.
+ * @param {string} stack 
+ * @param {string} level
+ * @param {string} package 
+ * @param {string} message -
  */
 export const log = async (stack, level, pkg, message) => {
   try {

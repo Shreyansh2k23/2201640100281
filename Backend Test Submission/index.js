@@ -6,9 +6,6 @@ import { log } from 'logging-middleware'; // Import your logger!
 
 const app = express();
 const PORT = 3000;
-
-// In-memory "database"
-// Structure: { shortcode: { url, expiry, clicks: [] } }
 const urlDatabase = {}; 
 
 app.use(cors()); // Enable CORS for your frontend

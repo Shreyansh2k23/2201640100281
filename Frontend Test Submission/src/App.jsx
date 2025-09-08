@@ -1,9 +1,7 @@
-// src/App.jsx
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import axios from 'axios';
-import { log } from 'logging-middleware'; // Your logger
+import { log } from 'logging-middleware'
 
-// --- MUI Components ---
 import { 
   Container, 
   Card, 
@@ -30,7 +28,7 @@ function App() {
     setError('');
     setShortLink('');
 
-    log('frontend', 'info', 'component', `User attempting to shorten URL: ${url}`);
+    log('frontend', 'info', 'component', `User attempting to shorten URL: ${url}`)
     
     try {
       const response = await axios.post(`${BACKEND_URL}/shorturls`, { url });
